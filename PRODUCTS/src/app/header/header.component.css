@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+.card-header{
+    text-align: center;
+}
+.div2{
+    display: inline;
+}
+a{
+    padding: 12px;
+    text-transform: uppercase;
+}

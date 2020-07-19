@@ -1,0 +1,35 @@
+<div class="card-header">
+<h3 class="mb-0">Signup</h3>
+</div>
+<div class="card-body">
+    <form (ngSubmit)="adduser()">
+    <div class="form-group">
+        <label for="uname1">Name</label>
+        <input type="text" [(ngModel)]="user.name" name="name" class="form-control rounded-0" required>
+        
+    </div>
+    <div class="form-group">
+        <label for="uname1">Email</label>
+        <input type="email" [(ngModel)]="user.email" name="email" class="form-control rounded-0" required>
+        
+    </div>
+    <div class="form-group">
+        <label for="uname1">Phone</label>
+        <input type="number" [(ngModel)]="user.phone" name="phone" class="form-control rounded-0" required>
+        
+    </div>
+    <div class="form-group">
+        <label for="uname1">Password</label>
+        <input type="text" [(ngModel)]="user.password" name="password" class="form-control rounded-0" required>
+        
+    </div>
+    <div class="form-group">
+        <label >ConfirmPassword</label>
+        <input type="text" [(ngModel)]="user.conpassword" name="conpassword" class="form-control rounded-0" required>
+
+    </div>
+<div>
+    <button type="submit"  class="btn btn-primary float-right ">Register</button>
+</div>
+</form>
+</div>

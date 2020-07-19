@@ -1,0 +1,12 @@
+a.edit {
+    color: #FFC107;
+}
+ a.delete {
+    color: #E34724;
+}
+a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    min-width: 24px;
+}    
