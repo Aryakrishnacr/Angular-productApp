@@ -10,9 +10,11 @@ Baseurl = "http://localhost:3000/api/"
   getProducts():Observable<any> {
     return this.http.get(this.Baseurl + "products");
   }
-  newProduct(item){
+  newProduct(item):Observable<any> {
     return this.http.post(this.Baseurl + "products/insert",item)
-    .subscribe(data=>{console.log(data)})
+  }
+  updateProduct(id,item):Observable<any> {
+    return this.http.put(this.Baseurl + "products/update/"+id,item)
   }
   deleteProduct(id):Observable<any> {
     return this.http.delete(this.Baseurl + "products/delete/"+id)

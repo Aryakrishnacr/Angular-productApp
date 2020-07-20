@@ -59,15 +59,16 @@ exports.create = (req, res) => {
   };
 
   exports.update = (req, res) => {
+
     const product = req.product;
-    product.productId = req.body.product.productId,
-    product.productName = req.body.product.productCode,
-    product.productCode = req.body.product.productCode,
-    product.releaseDate = req.body.product.releaseDate,
-    product.description = req.body.product.description,
-    product.price = req.body.product.price,
-    product.starRating = req.body.product.starRating,
-    product.imageUrl = req.body.product.imageUrl
+    product.productId = req.body.productId,
+    product.productName = req.body.productName,
+    product.productCode = req.body.productCode,
+    product.releaseDate = req.body.releaseDate,
+    product.description = req.body.description,
+    product.price = req.body.price,
+    product.starRating = req.body.starRating,
+    product.imageUrl = req.body.imageUrl
     product.save((err, data) => {
         if (err) {
             return res.status(400).json({

@@ -38,6 +38,11 @@ export class ProductlistComponent implements OnInit {
       this.grtProducts()
     })
   }
+  updateproduct(product)
+  {
+    let data = JSON.stringify(product)
+    this.router.navigate(['/add', { productid: data }]);
+  }
 
  
 
