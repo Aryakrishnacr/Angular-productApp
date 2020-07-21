@@ -36,7 +36,7 @@ let data = this.route.snapshot.paramMap.get('productid');
       this.productForm.setValue({
         productId:this.updateProduct.productId ,
       productName:this.updateProduct.productName ,
-      productCode:this.updateProduct.productName ,
+      productCode:this.updateProduct.productCode ,
       releaseDate: this.updateProduct.releaseDate,
       description:this.updateProduct.description ,
       price: this.updateProduct.price,
